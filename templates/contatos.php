@@ -1,10 +1,10 @@
 <p>Preencha o formulário abaixo para entrar em contato com a equipe do site.</p>
 
 {{FORMERROR}}
-
+<hr>
 <p class="center text-red small">Todos os campos são obrigatórios!</p>
 
-<form action="{{SELF}}" method="post">
+<form action="{{ACTION}}" method="post">
     <input type="hidden" name="send" value="send">
     <p>
         <label for="name">Nome:</label>
