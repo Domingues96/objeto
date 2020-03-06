@@ -86,7 +86,10 @@ class contactForm{
             } //Se vazio, mantem o valor default
 
         }
-
+            // metódo que exibe o formulário
+            public function get(){
+                $erro = $this->getFormError();
+            }
 }
 
 $action = $_SERVER['PHP_SELF'];       // Endereço desta mesma página (contatos.php)
@@ -96,7 +99,7 @@ $action = $_SERVER['PHP_SELF'];       // Endereço desta mesma página (contatos
 
     // altera o valor de formerror
     $contato->setFormError('É........ Não foi dessa vez');
-    echo '/n';
+    echo "\n";
     // lê o valor de formerror
     echo $contato->getFormError();
 
@@ -104,30 +107,30 @@ $action = $_SERVER['PHP_SELF'];       // Endereço desta mesma página (contatos
     $contato->setFormName('É........ Não foi dessa vez');
     // lê o valor de formname
     echo $contato->getFormName();
-    echo '/n';
+    echo "\n";
 
     // altera o valor de formemail
     $contato->setFormEmail('É........ Não foi dessa vez');
     // lê o valor de formemail
     echo $contato->getFormEmail();
-    echo '/n';
+    echo "\n";
 
     // altera o valor de formsubject
     $contato->setFormSubject('É........ Não foi dessa vez');
     // lê o valor de formsubject
     echo $contato->getFormSubject();
-    echo '/n';
+    echo "\n";
 
     // altera o valor de formmsg
     $contato->setFormMsg('É........ Não foi dessa vez');    
     // lê o valor de formmsg
     echo $contato->getFormMsg();
-    echo '/n';
+    echo "\n";;
 
     // altera o valor de formmsg
     $contato->setTemplate('É........ Não foi dessa vez');
     // lê o valor de formmsg
     echo $contato->getTemplate();
-    echo '/n';
+    echo "\n";
 
 ?>
